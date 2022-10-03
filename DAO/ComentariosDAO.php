@@ -37,7 +37,7 @@
 
             if($stmt->rowCount() > 0){
 
-                $data = $stmt->fetchAll();
+                $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 foreach($data as $row){
                     array_push($all_comments, $row);
