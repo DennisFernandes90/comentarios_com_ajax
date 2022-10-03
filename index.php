@@ -6,7 +6,7 @@
     $comentarios = new Comentarios();
     $comentariosDao = new ComentariosDAO($conn);
 
-    $display = $comentariosDao->show_comments();
+    
 
 ?>
 
@@ -48,13 +48,6 @@
 
         <h3>Comentários:</h3>
         <div class="comments-box">
-
-
-            <div class="comment">
-                <h4 class="user-name-title">João</h4>
-                <p class="msg-text">Esta é a mensagem</p>
-                <p class="date-text">Publicado em <span class="date">03/10/2022</span> </p>
-            </div>
 
         </div>
 

@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     $("#form-btn").click(function(){
         
-
+   
         var nome = $("#nome").val();
         var comentario = $("#comentario").val();
         var formData = {
@@ -20,8 +20,9 @@ $(document).ready(function(){
             success: function(response){
                 $("#nome").val("");
                 $("#comentario").val("");
-                getComments();
+                $(".comments-box").html("");
                 console.log(response);
+                getComments();
             }
         });
   
@@ -45,7 +46,10 @@ $(document).ready(function(){
         });
     }
 
+    
+
     getComments();
+    
 
     
 
