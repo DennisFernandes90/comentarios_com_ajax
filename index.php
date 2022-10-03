@@ -1,12 +1,5 @@
 <?php
     require_once("db.php");
-    require_once("models/Comentarios.php");
-    require_once("DAO/ComentariosDAO.php");
-
-    $comentarios = new Comentarios();
-    $comentariosDao = new ComentariosDAO($conn);
-
-    
 
 ?>
 
