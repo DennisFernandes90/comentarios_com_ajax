@@ -24,7 +24,7 @@
             $stmt->execute();
 
         }
-        //comentario bobo
+        
         //Resgata todos os comentários postados na base de dados
 
         public function show_comments(){
